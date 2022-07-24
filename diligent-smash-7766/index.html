@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-family: 'Nunito', sans-serif;
+            color: grey;
+        }
+        h1,h2,h4,h3{
+            font-family: 'Albert Sans', sans-serif;
+        }
+       #navbar{
+        width: 90%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+       }
+       #box1{
+        width: 80%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+       }
+       #box1,img{
+        width: 90px;
+        height: 40px;
+       }
+       #box1,p{
+        font-size: 16px;
+       }
+       #boxrt{
+        display: flex;
+        margin-right: 50px;
+        gap: 10px;
+       }
+       /* this is button styling of navbar */
+       /* #boxrt>button{
+        padding: 7px;
+       } */
+       .btn1{
+        border: 1px solid blue;
+        border-radius: 3px;
+        color:blue;
+        background-color: white;
+        font:bold;
+        padding: 7px;
+       }
+        .btn5{
+        border: 1px solid blue;
+        border-radius: 3px;
+        color:blue;
+        background-color:transparent;
+        font:bold;
+        padding: 7px;
+        }
+       .btn2{
+        border: 0px;
+        border-radius: 3px;
+        color:white;
+        background-color: blue;
+        font:bold;
+        padding: 7px;
+       }
+       .btn2:hover{
+        border-radius: 3px;
+        color:white;
+        background-color: rgb(9, 9, 122);
+        
+       }
+       /* below navbar */
+
+
+       #cont1{
+        width: 90%;
+        height: 500px;
+        /* border: 1px solid green; */
+        margin: auto;
+       }
+       #cont1>h1{
+        width: 65%;
+       }
+       #boxA{
+        width: 70%;
+        height: 30px;
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+       }
+       #boxA>div{
+        display: flex;
+        align-items: center;
+        gap: -10px;
+        margin-right: 20px;
+       
+        
+       }
+       #boxA>div>img{
+        width: 22px;
+        margin-right: 10px;
+       }
+       #bbb{
+        width: 60%;
+        height: 320px;
+        /* border: 1px solid green; */
+        
+       }
+       #bbb>div{
+        width: 50%;
+        height: 100%;
+       }
+       #boxB{
+        display: flex;
+        margin-top: 20px;
+       
+        
+       }
+       #ccc{
+        width: 30%;
+        height: auto;
+        /* border: 1px solid green; */
+        text-align: center;
+        margin-left: 50px;
+        line-height: 20px;
+       }
+
+       /* logo slider part css from codepen website */
+       .wrapper{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        border-radius: 50px;
+        padding: 1px;
+        /* background-color:#ddd ;
+        box-shadow: rgba(0,0,0,0.35) 0 5px 15px;  */
+
+       }
+       .slide{
+        animation: animate 25s alternate linear infinite;
+        padding-right: 50px;
+       }
+       .wrapper:hover .slide{
+        animation-play-state:paused;
+       }
+       @keyframes animate{
+        0%{
+            transform: translate3d(0,0,0);
+        }
+        100%{
+            transform: translate3d(-1100px,0,0);
+        }
+       }
+       /* below slide css */
+       .below-slide{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        
+       }
+       .below-slide>img{
+        width: 15px;
+        height: 20px;
+       }
+       /* signup button */
+       .signup{
+        margin-top: 30px;
+        padding: 10px;
+        border: 1px solid blue;
+        color: blue;
+        background-color: white;
+        border-radius: 5px;
+
+       }
+       .signup:hover{
+        
+        padding: 10px;
+        border: 2px solid blue;
+        color: blue;
+        background-color: white;
+        border-radius: 5px;
+       }
+
+       /* ---------------------------------------------------------------Day 2 code starts from here--------------------------------------------------------- */
+
+       .contd2{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(4,1fr) ;
+        grid-template-rows: 300px;
+        
+        gap: 30px;
+
+       }
+       .contd2>div>div:nth-child(1){
+        width: 100%;
+      
+        gap: 30px;
+        
+       }
+       .contd2>div>div:nth-child(2){
+        width: 100%;
+       
+        gap: 50px;
+        padding-left: 25px;
+        line-height: 5px;
+       }
+       .contd2>div>div>img{
+        width: 100%;
+        height: 140px;
+        display: block;
+        margin: auto;
+       }
+       .d1c{
+        margin-top: 80px;
+        text-align: center;
+       }
+       .d2c{
+        text-align: center;
+        margin-top: -15px;
+       }
+       #contd2>div+div>p+p{
+        margin-top: 200px;
+       }
+       .test12{
+        padding-top: 70px;
+        color: blue;
+        text-decoration: underline;
+        font-size: 13px;
+       }
+
+       /* -------------Learn how we keep end-user privacy at the heart of everything we do.------------------------- */
+
+       .cont4{
+        width: 90%;
+        height: auto;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+       }
+       .cont4>div:nth-child(1){
+        width: 50%;
+        height: auto;
+        margin-right: 50px;
+        /* border: 1px solid green; */
+       }
+       .cont4>div:nth-child(2){
+        padding-left: 50px;
+       }
+        #cont4inner>div{
+        display: grid;
+        height: 50%;
+        width: 500px;
+        /* grid-template-columns: 100%; */
+        grid-template-rows: repeat(2,1fr);
+        /* border: 1px solid red; */
+       }
+       #cont4inner>div:nth-child(1){
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+       #cont4inner>div:nth-child(2){
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: -50px;
+       }
+       #cont4inner img{
+        width: 50px;
+        height: 20px;
+        padding-top: 5px;
+        margin-bottom: -15px;
+        margin-left: -15px;
+       }   
+       #cont4inner p{
+        color: blue;
+        text-decoration: underline;
+        font-size: 13px;
+       } 
+       #cont4img{
+        width: 100px;
+        height: 100px;
+       }    
+       .cont4 img{
+        width: 100%;
+        height: 300px;
+       }     
+
+       /* -----------------------------------Get started with Hotjar---------------------------------------------------------- */
+       #container5{
+        width: 85%;
+        height: auto;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(270deg, #8EC5FC 0%, #f5f5f5 100%);
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        padding-left: 50px;
+       }
+       #container5>div{
+        width: 50%;
+        height: auto;
+        /* border: 1px solid green; */
+       }
+       #container5>div:nth-child(2){
+        display: grid;
+        height: 50px;
+        grid-template-rows: repeat(3,1fr);
+        padding-left: 50px;
+        padding-top: 20px;
+       }
+       #boxA p{
+        color: black;
+       }
+
+       /* ----------------------------------------------Hi product designers (container6)---------------------------------------------------- */
+
+
+       #container6{
+        width:90%;
+        height: 350px;
+        
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+       }
+       #container6>div{
+        width: 50%;
+        height:350px ;
+        /* border: 1px solid green; */
+       }
+       #container6>div:nth-child(2){
+        padding-top: 50px;
+        padding-left: 50px;
+       }
+       #container6>div:nth-child(1){
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+       #container6 img{
+        width: 100%;
+        height: fit-content;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+       #cont6B{
+        padding-top: 90px;
+        
+       }
+       #container6A{
+        width:90%;
+        height: 350px;
+        
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+       }
+       #container6A>div{
+        width: 50%;
+        height:350px ;
+        /* border: 1px solid green; */
+       }
+       #container6A>div:nth-child(1){
+        padding-top: 50px;
+        padding-left: 50px;
+       }
+       #container6A>div:nth-child(2){
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+       #container6A img{
+        width: 100%;
+        height: fit-content;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       }
+       #cont6B{
+        padding-top: 90px;
+       }
+         /* -------------------------------------------------------------------------Footer---------------------------------------------------------------*/
+
+
+         #footer{
+            
+        background:white;
+        
+        display: flex;
+        width: auto;
+        margin-top: 150px;
+
+         }
+         #footer>div{
+            width: 20%;
+            height: 400px;
+           
+            background-color: #202542;
+         }
+         #footer li{
+            list-style: none;
+            line-height: 30px;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            color: grey;
+         }
+         #footer h3{
+            margin-left: 41px;
+            color: white;
+         }
+         #container7{
+            width: 100%;
+            height: 30px;
+            background-color: #202542;
+         }
+         #container7 img{
+            width: 22px;
+            height: 25px;
+            margin-right: 10px;
+            
+            
+         }
+         #container7>div{
+            width: 160px;
+            height: 30px;
+            
+           
+            margin-left: 87%;
+         }
+         #container8{
+            width: 80%;
+            height: 0.0001px;
+           
+           
+            margin:auto;
+         }
+         #container9{
+            width: 100%;
+            height: 100px;
+          
+            display: flex;
+            background-color: #202542;
+            
+            align-items: center;
+         }
+         #container9>div>p{
+            margin-left: 40px;
+         }
+         #container9>div{
+            width: 50%;
+            height: 50px;
+            
+            display: flex;
+         }
+         #container9A>div{
+            width: 25%;
+            height: 50px;
+            text-align: center;
+         }
+       
+
+
+
+       
+        
+    </style>
+</head>
+<body>
+    <!-- Header Bar -->
+   <div id="navbar">
+    <div id="box1">
+        <img src="data:image/png;base64,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" alt="">
+        <p>Product</p>
+        <p>Why Hotjar</p>
+        <a href="pricing.html"><p>Pricing</p></a>
+        <p>Learn</p>
+        <p>Company</p>
+    </div>
+    <!-- this is right box -->
+    <div id="boxrt">
+        <a href="login.html"><button class="btn1">Sign in</button></a>
+        <a href="signup.html"><button class="btn2">Get started free</button></a>
+    </div>
+   </div>
+
+
+   <!-- below nav bar -->
+
+
+   <div id="cont1">
+    <h1>Understand <span style="color: red ;size: 100px;font-size: 38px;">how users behave</span> on your site, what they need, and how they feel, fast.</h1>
+    <div id="boxA">
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6zxMbtJI8T43Ia7uHg49YB/32b9315a40b4f1363fb448bd0cab5534/icon-no-card.svg" alt="">
+            <p>No Credit Cred Required</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/o8L9i7vSjKytR7aYfef7C/ead95db8958fa7ef66750e9ba4fea91e/icon-sign.svg" alt="">
+            <p>56,549 users signed up last month</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6lgSqbFdgGqSyLx3sGk18/e768204f0c3755e5dd816762a402ac24/icon-privacy.svg" alt="">
+            <p>GDPR- & CCPA-ready</p>
+        </div>
+        
+    </div>
+    <div id="boxB">
+        <div id="bbb">
+            <img style="width: 90%; height:100%;" src="https://img.freepik.com/free-vector/people-waiting-job-interview_52683-43510.jpg?t=st=1658342898~exp=1658343498~hmac=2981f33a47c78c3367167504582e20f9d838ec5a602da6b6c65bac51ea95b1cc&w=1380" alt="">
+        </div>
+        <div id="ccc">
+            <h4>The slow, manual days of collating data and feedback are over.</h4>
+            <p>Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.</p>
+            <a href="signup.html"><button class="signup">Sign up with email</button></a>
+            <p>Hotjar is free forever - upgrade anytime</p>
+        </div>
+    </div>
+    <!-- below this (Trusted by 900,000 websites in 180+ countries) -->
+    <h2 style="text-align: center">Trusted by 900,000 websites in 180+ countries</h2>
+    <div class="slider-area">
+        <div class="wrapper">
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/3A5yNJ7WfWikTXKsk7r4hh/4060c710bc560b59a0dd06b6521fbe94/Decathlon.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7hhEfCdZPI7mPC24fFsC94/adf392604ef673a224307e48ac87bd96/Adobe.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7dsuPwH4V8KJvCexSZueZc/272b2ef619de8ae4b443758413a19733/Unbounce_Logo.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7siImqwRupwoBHyJCaO1zy/2d7ec1ccc7761f76c8fe18de52e889a4/T-Mobile.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/18dCY8kGkSbfdNB2Eod1Pp/4768154e8873caa4c1574499dc4e2aab/Microsoft_Logo.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/3A5yNJ7WfWikTXKsk7r4hh/4060c710bc560b59a0dd06b6521fbe94/Decathlon.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7hhEfCdZPI7mPC24fFsC94/adf392604ef673a224307e48ac87bd96/Adobe.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7dsuPwH4V8KJvCexSZueZc/272b2ef619de8ae4b443758413a19733/Unbounce_Logo.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7siImqwRupwoBHyJCaO1zy/2d7ec1ccc7761f76c8fe18de52e889a4/T-Mobile.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/18dCY8kGkSbfdNB2Eod1Pp/4768154e8873caa4c1574499dc4e2aab/Microsoft_Logo.svg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg" height="100" width="250" alt="" />
+            </div>
+            
+        </div>
+    </div>
+    <!-- below slide bar -->
+    <div class="below-slide">
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">
+        <p>No credit card required</p>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">
+        <p>56,549 users signed up last month</p>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">
+        <p>GDPR- & CCPA-ready</p>
+    </div>
+
+    <!-- ---------------------------------------------------------------Day 2 code starts from here--------------------------------------------------------- -->
+
+
+    <h2 class="d1c">How it works</h2>
+    <p class="d2c">Understand how users really experience your site.</p>
+    <div class="contd2">
+        <div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/6Qv16uzcArgmj23zvPE1Zg/e7861ed2958dda93ffdbf313c8a228c1/Recordings.svg" alt="">
+            </div>
+            <div>
+                <h4>Heatmaps</h4>
+                <p>Visualize user behaviour </p>
+                <p class="test12">Learn more</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/5khXOtcSPp0ttREXhZirXR/bf41bc4a997d0ea49359482c4c36d257/Heatmaps.svg" alt="">
+            </div>
+            <div>
+                <h4>Recordings</h4>
+                <p>See what ypur user see</p>
+                <p class="test12">Learn more</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/4FznAGtU4dktOtbIGubStD/e496e6120efcf17cbb4a8b514ecbec43/Surveys.svg" alt="">
+            </div>
+            <div>
+                <h4>Feedback</h4>
+                <p>Discover how user feel</p>
+                <p class="test12">Learn more</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/4COczjOFD9M9107Fg88Ol6/4a0040ffe4c7ebdd8d13c60b2408699a/Incoming-feedback.svg" alt="">
+            </div>
+            <div>
+                <h4>Surveys</h4>
+                <p>Hear from your user</p>
+                <p class="test12">Learn more</p>
+            </div>
+        </div>
+       
+    </div>
+    <!-- ----------------------------Learn how we keep end-user privacy at the heart of everything we do.---------------------------------------------------------------- -->
+    <div class="cont4">
+        <div>
+            <h2>
+                Learn how we keep end-user privacy at the heart of everything we do.
+            </h2>
+            <img src="https://i.pinimg.com/originals/50/78/a0/5078a05eb1b6847d93383eaa4c0ed500.gif" alt="">
+        </div>
+        <div id="cont4inner">
+            <div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg" alt="">
+                    <h4>GDPR commitment</h4>
+                    <p>Learn more</p>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg" alt="">
+                    <h4>CCPA commitment</h4>
+                    <p>Learn more</p>
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg" alt="">
+                    <h4>PCI compliance</h4>
+                    <p>Learn more</p>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg" alt="">
+                    <h4>Our approach to privacy</h4>
+                    <p>Learn more</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ----------------------------------Get started with Hotjar----------------------------------------------------------  -->
+
+    <div id="container5">
+        <div>
+            <h2>Get started with Hotjar</h2>
+            <div>
+                <p>It only takes a few minutes to get started with Hotjar. Understand your users—start free, today.</p>
+            </div>
+            <div>
+                <button class="btn5">Tour the Product</button>
+                <button class="btn2">Get started for free</button>
+            </div>
+            <div>
+                <p>No credit card required</p>
+            </div>
+        </div>
+        <div id="boxA">
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/6zxMbtJI8T43Ia7uHg49YB/32b9315a40b4f1363fb448bd0cab5534/icon-no-card.svg" alt="">
+                <p>No Credit Cred Required</p>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/o8L9i7vSjKytR7aYfef7C/ead95db8958fa7ef66750e9ba4fea91e/icon-sign.svg" alt="">
+                <p>56,549 users signed up last month</p>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/6lgSqbFdgGqSyLx3sGk18/e768204f0c3755e5dd816762a402ac24/icon-privacy.svg" alt="">
+                <p>GDPR- & CCPA-ready</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------Hi product designers (container6)---------------------------------------------------- -->
+
+
+    <div id="container6">
+        <div>
+            <img src="https://images.pexels.com/photos/5256526/pexels-photo-5256526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+        <div>
+            <h2>Hi product designers</h2>
+            <p>Design products that resonate, with Hotjar’s help. Figure out what works, what doesn’t, and why.</p>
+            <button class="btn2">Learn more</button>
+        </div>
+    </div>
+    <div id="container6A">
+        <div id="cont6B">
+            <h2>Hello researchers</h2>
+            <p>Map the user journey to spot patterns and trends. Develop a deeper understanding of your users with Hotjar.</p>
+            <button class="btn2">Learn more</button>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/8117438/pexels-photo-8117438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+    </div>
+    <div id="container6">
+        <div>
+            <img src="https://images.pexels.com/photos/7688168/pexels-photo-7688168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+        <div>
+            <h2>Hey product managers</h2>
+            <p>See how people are experiencing your product, figure out the changes they need most, and get buy-in for your ideas. Fast.</p>
+            <button class="btn2">Learn more</button>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------------Footer----------------------------------------------------------------- -->
+
+
+    <div id="footer">
+        <div>
+            <h3>Product</h3>
+            <ul>
+                <!-- <li>Product</li> -->
+                <li>Product tour</li>
+                <li>Heatmaps</li>
+                <li>Session recordings</li>
+                <li>Feedback</li>
+                <li>Surveys</li>
+                <li>__________________________</li>
+                <li>Integrations</li>
+                <li>Survey templates</li>
+                <li>Highlights</li>
+                <li>Workspaces</li>
+                <li>Dashboard</li>
+                
+            </ul>
+        </div>
+        <div>
+            <h3>Why Hotjar</h3>
+            <ul>
+                <!-- <li>Product</li> -->
+                <li>For product teams</li>
+                <li>For product managers</li>
+                <li>For product designers</li>
+                <li>For researchers</li>
+                <li>Case studies</li>
+                
+            </ul>
+        </div>
+        <div>
+            <h3>Learn</h3>
+            <ul>
+                <!-- <li>Product</li> -->
+                <li>Product tour</li>
+                <li>Heatmaps</li>
+                <li>Session recordings</li>
+                <li>Feedback</li>
+                <li>Surveys</li>
+                <li>Integrations</li>
+                <li>Survey templates</li>
+                <li>Highlights</li>
+                <li>Workspaces</li>
+                <li>Dashboard</li>
+                <li>Trends</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Company</h3>
+            <ul>
+                <!-- <li>Product</li> -->
+                <li>About us</li>
+                <li>Careers</li>
+                <li>Privacy</li>
+                <li>Press</li>
+                
+            </ul>
+        </div>
+        <div>
+            <h3>Compliance</h3>
+            <ul>
+            <li>Integrations</li>
+            <li>Survey templates</li>
+            <li>Highlights</li>
+            <li>Workspaces</li>
+            <li>Dashboard</li>
+            <li>Trends</li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+
+    <div id="container7">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
+            <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1658649509~hmac=798a5d69de53f5573ad7ea1f8bc55abd" alt="">
+        </div>
+       
+    </div>
+
+    <div id="container8"></div>
+
+    <div id="container9">
+        <div>
+            <p>Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.</p>
+        </div>
+        <div id="container9A">
+            <div><p>English (United States)</p></div>
+            <div><p> Cookie info</p></div>
+            <div><p>Cookie settings</p></div>
+            <div><p>Do not track</p></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
