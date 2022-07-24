@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Hotjar account</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        transition: 0.3s;
+        }
+        body {
+            height: 100vh;
+            background-image: linear-gradient(130deg, #fefefe, #ededed);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            background-color: white;
+            display: flex;
+            width: 800px;
+            border: 1px solid grey;
+            box-shadow: 8px 8px 0 0 #ef8565;
+            position: relative;
+            
+        }
+        #container:hover{
+            background-color: white;
+            display: flex;
+            width: 800px;
+            border: 1px solid grey;
+            box-shadow: 8px 8px 0 0 #f8450e;
+            position: relative;
+            
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .left, .right {
+            width: 400px;
+        }
+        .left {
+            padding: 40px 60px;
+        }
+        div .right {
+            background-image: url(https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?t=st=1658569750~exp=1658570350~hmac=0f5b30f1bf34e497dcc35124d9fd5abb4a09f2718a5fbbcead0edde311ab547f&w=740);
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 100%;
+            border: 30px solid white;
+        }
+        img {
+            height: 500px;
+            padding: 40px 60px;
+        }
+        .left {
+            padding: 40px 60px;
+        }
+        .left p {
+        margin-bottom: 25px;
+        margin-top: 10px;
+        }
+        input {
+            height: 35px;
+        }
+        label {
+        margin: 15px 0 5px;
+        font-size: 0.9rem;
+        }
+        .accept {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        }
+        .accept input {
+        width: 15px;
+        margin-right: 10px;
+        }
+        #submit {
+        width: 100%;
+        height: 45px;
+        border: 0;
+        background-color: #ef8565;
+        color: white;
+        font-size:1rem;
+        margin-top: 20px;
+        cursor: pointer;
+        }
+        #submit:hover {
+        width: 100%;
+        height: 45px;
+        border: 0;
+        background-color: #f8450e;
+        color: white;
+        font-size:1rem;
+        margin-top: 20px;
+        }
+        #hotjarcolor{
+            color: #f8450e;
+        }
+        #already_account{
+            color: blue;
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="left">
+            <h1>Welcome to <h1 id="hotjarcolor">Hotjar</h1></h1>
+            <p>Create New Account</p>
+            <form action="" id="form">
+                
+                <label for="Name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                
+                <label for="Email">Email</label>
+                <input type="email" name="Your Email" id="email" placeholder="Your Email">
+                
+                <label for="confirm">Password</label>
+                <input type="password" name="confirm" id="password" placeholder="Enter Password">
+                
+                <div class="accept">
+                  <input type="checkbox" id="terms">
+                  <label for="terms">I agree to the <a href="#">terms of service<a></label>
+                </div>
+                    
+                <input id="submit" type="submit" name="submit" value="Sign Up">
+                <!-- <p id="already_account">Already have an account ? <a href="login.html"><span style="text-decoration:underline ;">Click Here</span></a></p> -->
+        </div>
+        
+        <div class="right"></div>
+        
+        
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit",regFunc)
+
+    let dataArr=JSON.parse(localStorage.getItem("userData")) || []
+     function regFunc(){
+       event.preventDefault()
+       let datailsObj={
+        personName:document.querySelector("#name").value,
+        personEmail:document.querySelector("#email").value,
+        personPassword:document.querySelector("#password").value
+       }
+       if(datailsObj.personName == "" || datailsObj.personEmail == "" || datailsObj.personPassword == ""){
+        alert("*All fields are mandatory")
+        return
+       }
+       else{
+        window.location.href="login.html"
+       }
+       dataArr.push(datailsObj)
+       localStorage.setItem("userData",JSON.stringify(dataArr))
+     }
+</script>
